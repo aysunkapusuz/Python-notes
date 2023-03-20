@@ -114,3 +114,68 @@ for arg in sys.argv[1:]:
 
 for arg in sys.argv[1:-1]:
     print("hello, my name is", arg)
+
+
+
+# Python comes with to talk about more generally packages that exist.
+# One of the reasons that Python is so popular and powerful these days
+# is that there's a lot of third-party libraries
+# out there as well, otherwise known as packages.
+# Python itself has a term of art called a package, which is a module essentially
+# that's implemented in a folder, not just a file but a folder.
+# But more generally, a package is a third-party library that you,
+# that I can install on our own Mac or PC or our cloud server
+# and gain access to even more functionality that other people have implemented for us.
+# Now, one of the locations you can get all of these packages
+# is called the PYTI website, the Python Package Index which lives at this URL
+# here.
+# And this is a website that is searchable via the command line,
+# as well as via the web, that allows you to download and install
+# all sorts of packages.
+# Now, there's a fun one out there that's a throwback to a command that's
+# been around for years in command line environments called cowsay.
+# Cowsay is a package in Python that allows you to have a cow say something
+# on your screen.
+
+# Nowadays, a lot of languages, Python among them, has what's called its own package manager.
+# This one called pip which is just one.
+# Pip is a program that generally comes with Python itself, nowadays,
+# that allows you to install packages onto your own Macs or PCs or cloud environment by just running a command.
+# And then, you have access to a whole new library in Python
+# that didn't come with Python itself.
+# But now it's available on your system for you.
+
+# APIs
+# An API is an application programming interface.
+# And it can refer to Python files and functions.
+# But often, APIs really refer to third-party services
+# that you and I can write code that talk to.
+# Many APIs, but not all, live on the internet these days so that so long as you have a browser or so long
+# as you have some experience with Python programming or programming
+# in any language, you can write code that in effect pretends to be a browser,
+# connects to that third-party API on a server,
+# and download some data that you can then incorporate into your own program.
+# Now, how do you do this?
+# Python has a very popular package that you
+# can install via pip called requests.
+# The requests library allows you to make web request,
+# internet request using Python code essentially
+# as though you were a browser yourself.
+# You can automate, therefore, the retrieval of URLs
+# that start with HTTP or HTTPS.
+# The documentation for this library is that a URL like this,
+# but it too can be installed at the command line.
+# And even though it's third party, it's one
+# of the most popular and commonly used packages out there in Python.
+
+
+# There is a standard text format known as JSON--
+# JavaScript Object Notation is technically related to yet,
+# another programming language called JavaScript.
+# But JSON itself is typically used nowadays
+# as a language agnostic format for exchanging data between computers.
+# By language agnostic, that means you don't have to use JavaScript.
+# We can use Python or any other language to read JSON or write it as well.
+# And it's a completely text-based format, which
+# means that if I visit that URL with my browser, what gets downloaded
+# is just a bunch of text.
