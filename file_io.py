@@ -161,3 +161,57 @@ def get_name(student):
 for student in sorted(students, key=get_name):
       print(f"{student['name']} is in {student['house']}")
 
+
+# we can get rid of the function get_name
+# lambda is a another keyword
+students = [] 
+
+with open("students.csv") as file:
+      for line in file:
+            name, house = line.rstrip().split(",")
+            student = {"name": name, "house": house}
+            students.append(student)
+
+for student in sorted(students, key=lambda student: student["name"]):
+      print(f"{student['name']} is in {student['house']}")
+
+
+# csv.reader() from csv module
+# import csv
+students = [] 
+
+with open("students.csv") as file:
+      reader = csv.reader(file)
+      for name, home in reader: 
+            students.appends({"name": name, "home": home})
+
+for student in sorted(students, key=lambda student: student["name"]):
+      print(f"{student['name']} is in {student['house']}")
+
+# DictReader()
+students = [] 
+
+with open("students.csv") as file:
+      reader = csv.DictReader(file)
+      for name, home in reader: 
+            students.appends({"name": name, "home": home})
+
+for student in sorted(students, key=lambda student: student["name"]):
+      print(f"{student['name']} is in {student['house']}")
+
+###
+import csv
+
+name = input("What's your name? ")
+home = input("What's your home? ")
+
+#a is append mode
+with open("students.csv", "a") as file:
+      writer = csv.writer(file)
+      writer.writerow([name, home])
+
+
+### 
+with open("students.csv", "a") as file:
+      writer = csv.DictWriter(file, fieldnames=["name", "home"])
+      writer.writerow({"name" : name, "home": home})
