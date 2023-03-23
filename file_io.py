@@ -215,3 +215,19 @@ with open("students.csv", "a") as file:
 with open("students.csv", "a") as file:
       writer = csv.DictWriter(file, fieldnames=["name", "home"])
       writer.writerow({"name" : name, "home": home})
+
+# You can store data any way that you want.
+# We've just picked CSVs because it's representative
+# of how you might read and write from a file
+# and do so in a structured way, where you can somehow have multiple keys,
+# multiple values all in the same file without having to resort to what would
+# be otherwise known as a binary file.
+# So a binary file is a file that's just zeros and ones.
+# And they can be laid out in any pattern you might want, particularly
+# if you want to store not textual information,
+# but maybe graphical, or audio, or video information as well.
+# So it turns out that Python is really good
+# when it comes to having libraries for, really, everything.
+# And in fact, there's a popular library called
+# pillow that allows you to navigate image files as well
+# and to perform operations on image files.
